@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 import "./index.css";
 
-const pizzaData = [
+const pizzas = [
   {
     name: "Focaccia",
     ingredients: "Bread with italian olive oil and rosemary",
@@ -69,9 +69,6 @@ function Header() {
 }
 
 function Menu() {
-  const pizzas = pizzaData;
-  // const pizzas = [];
-
   return (
     <main className="menu">
       <h2>Our menu</h2>
@@ -84,7 +81,7 @@ function Menu() {
           </p>
 
           <ul className="pizzas">
-            {pizzaData.map((pizza) => (
+            {pizzas.map((pizza) => (
               <Pizza pizzaObj={pizza} key={pizza.name} />
             ))}
           </ul>

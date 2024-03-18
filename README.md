@@ -1,1 +1,3 @@
-# practice-react-pizza-menu
+Pizza Menu
+
+![screenshot](screenshot.png)
